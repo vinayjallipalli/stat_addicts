@@ -6,6 +6,10 @@ var app=express();
 app.use(express.static('public'));
 
 
+app.get('/', function(request, response) {
+  response.render('public/index.html');
+});
+
 app.get('/scrape', function(req, res){            
 	request('https://grup14.com/stories/matchdays?page_ncategory_matchdays=1', function (error, response, html) {
 		if (!error && response.statusCode == 200) 
