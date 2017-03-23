@@ -5,6 +5,7 @@ var app=express();
 
 app.use(express.static('public'));
 
+app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
   response.render('public/index.html');
@@ -49,6 +50,6 @@ app.get('/scrape', function(req, res){
 
 
 
-app.listen(3000,function () {
-	console.log("I will be working my ass of on port 3000");
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
