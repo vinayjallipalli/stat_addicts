@@ -1,0 +1,12 @@
+1:Open cmd and navigate to your existing local repository on your machine if you don't have just clone it from your git hub
+2: cd C:\Users\vjallipalli01\My Stuff\Beckman\Stat_addict_app\src
+3: push it to git whenever you change the code
+--
+
+For pushing to heroku Heroku:  https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
+
+1: heroku login (it will ask for credentials)
+2: Navigate to your local repository and push it to heroku
+3: git push heroku master
+4:  heroku ps:scale web=1 (creates an working instance of your app)
+5: heroku open (opens your webapp)  
