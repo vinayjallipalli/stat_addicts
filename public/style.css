@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Nosifer");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+
+html, body {
+  height: 100%;
+}
+
+.container-fluid > .container, .container > .row {
+  height: 100%;
+}
+
+.title{
+    margin-top: 350px;
+	font-family: 'Nosifer', cursive;
+	font-size: 4.5vw;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.subtitle{
+	font-family: 'Merienda', cursive;
+	font-size: 1.2vw;
+}
+
+.subtitle2{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.subtitle3{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 2vw;
+}
+
+.subtitle4{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+.bg-primary {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.99) ),url("i1.jpg");
+	background-repeat: no-repeat;  
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;   
+	background-position:center 0%; 
+	color: #ffffff;
+}
+
+.bg-primary2 {    
+    background: url("i2.jpg") center 40px fixed no-repeat #373737;
+    color: #fff;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+.custcard{
+    background-color: #F1F1F1;
+    border-color: #FDFDFD;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+/***** ---------------------------curved---------------------------------------------------------*****/
+
+[class*=decor-] {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+}
+
+.decor {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.decor-bottom {
+    top: 100%;
+}
+
+.decor-top {
+    bottom: 100%;
+}
+
+.section {
+    position: relative;
+    z-index: 4;
+    padding: 96px 0;
+}
+
+.section.has-bottom {
+    z-index: 5;
+}
+.section.has-bottom.has-top {
+    z-index: 20;
+}
+
+.swatch-yellow-black, [class*="swatch-"] .swatch-yellow-black {
+    background: #FDFDFD;
+    color: #66664a;
+}
+.swatch-black-yellow, [class*="swatch-"] .swatch-black-yellow {    
+    color: #eff1de;
+}
+
+.swatch-yellow-black .decor, [class*="swatch-"] .swatch-yellow-black .decor {
+    fill: #FDFDFD;
+    stroke: #FDFDFD;
+}
+
+/***** ---------------------------Navbar---------------------------------------------------------*****/
+
+
+.navbar {   
+    border: 0;
+    border-radius: 0;     
+    margin-bottom: 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+    position: fixed;    
+    width: 100%; 
+    z-index: 100;
+
+}
+.navbar-default{
+  background-color: #FFFFFF;
+    background:transparent;
+    border:none !important;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #ffffff;
+}
+.navbar li { color: #000 } 
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+/*msn vs bbc*/
+
+.main-img.messi {
+    position: absolute;
+    top: 80px;
+    left: -55px;
+    max-width: 37.5%;
+}
+.main-img.ronaldo {
+    position: absolute;
+    top: 80px;
+    right: -50px;
+    max-width: 37.5%;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Stat Addicts</title>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animations.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> 
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+	  <div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" href="#">ADDICTS</a>
+	  </div>
+
+	  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">	
+				<li><a class="active" href="#about">Home</a></li>
+				<li><a href="#section1">News</a></li>
+				<li><a href="#section2">MSN vs BBC	</a></li>
+				<li><a href="#section3">Statistics</a></li>
+				<li><a href="#section3">Barca News</a></li>
+			</ul>
+	  	</div>
+	 </div>
+</nav>
+
+
+<div id="about" class=" section container-fluid bg-primary text-center">
+	<div class="col animatedParent" data-sequence='500'>
+		<p class=" title animated growIn slower" data-id='1'>Stat Addicts</p><br>
+		<p class=" subtitle buttons-inline animated bounceInLeft slower text-center" data-id='2'>Football News, Statistics and much more........</p>
+		<p class=" subtitle buttons-inline animated bounceInRight slower text-center" data-id='3'>Sorry!! It's Soccer not "American Football" !! </p>
+	</div>     
+</div>
+
+<!--News-->
+<div  id="section1" class="section container-fluid swatch-yellow-black section-normal has-bottom has-top">
+
+	<div class="decor-top">
+		<svg class="decor" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 C50 100 50 100 100 0  L100 100 0 100" stroke-width="0"></path>
+		</svg>
+	</div>
+	<div class="col animatedParent">
+	<h1 class="subtitle2 animated growIn" style="color: #1c1e20">News</h1>
+	</div>
+	<br><br><br><br><br>
+
+<div class="container" ng-app="mod_one" ng-controller="ctrl_one">
+  	<div class="row">
+		   <div ng-repeat="s in details">		   		
+			    	<div class="clearfix" ng-if="$index % 3 == 0"></div>
+			    		<div class="col-md-4" >
+			      			<div class="card card-inverse custcard">
+								<!-- Image -->
+								<img class="card-img-top img-fluid" ng-src="{{s.a}}" alt="loading..">
+								<!-- Text Content -->
+								<div class="card-block" style="height: 170px">	
+									<h4 class="card-title" style="color: black ;font-family: 'Merriweather Sans', sans-serif;">{{s.b}}</h4>					
+									<p class="card-text" style="color: black;font-family: 'Noto Serif', serif;">{{s.c}}</p>
+								</div>
+							</div>
+					</div>				
+			</div>			
+  	</div>
+ </div>
+
+	<div class="decor-bottom">
+		<svg class="decor" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 100 C50 0 50 0 100 100 L100 0 0 0" stroke-width="1"></path>
+		</svg>
+	</div>
+
+	 	
+</div>
+<!--News-->
+
+
+
+
+<!--Comparisons-->
+<div  id="section2" class="section container-fluid swatch-black-yellow section-normal has-top bg-primary2" style="height: 150%">
+	<div class="decor-top">
+		<svg class="decor" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 C50 100 50 100 100 0  L100 100 0 100" stroke-width="0"></path>
+		</svg>
+	</div>
+	<div class="col animatedParent">
+	 <h1 class="text-light subtitle3 animated wiggle" style="text-align: center;">Comparisons</h1>
+
+	 <img class="main-img messi msn" src="http://messivsronaldo.net/wp-content/themes/starkers/images/msn.png" alt="MSN - Messi, Suarez and Neymar">
+	 <img class="main-img ronaldo bbc" src="http://messivsronaldo.net/wp-content/themes/starkers/images/bbc.png" alt="BBC - Ronaldo, Bale and Benzema">
+
+	 
+
+	 </div>
+</div>
+<!--Comparisons-->
+
+
+
+
+<!--Statistics-->
+<div id="section3" class="section container-fluid swatch-yellow-black section-normal has-top " >
+	
+	<div class="decor-top">
+		<svg class="decor" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 C50 100 50 100 100 0  L100 100 0 100" stroke-width="0"></path>
+		</svg>
+	</div>
+	<div class="col animatedParent">
+		<h1 class="text-light subtitle4 animated growIn"  style="text-align: center;color: #1c1e20">Statistics</h1>
+	 </div>	
+</div>
+<!--Statistics-->
+
+
+<!--Scripts-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="ang.js"></script>
+<script type="text/javascript" src="navbar-fixed.js"></script>
+<script type="text/javascript" src="css3-animate-it.js"></script>
+<!--Scripts-->
+
+</body>
+</html>
