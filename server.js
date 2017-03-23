@@ -49,6 +49,47 @@ app.get('/scrape', function(req, res){
 
 
 
+//******************* Not Completed*****************************//
+app.get('/scrape_one', function(req, res){            
+	request('http://www.goal.com/en-india/', function (error, response, html) {
+		if (!error && response.statusCode == 200) 
+		{
+			var $ = cheerio.load(html);
+			var title_one=[];	
+			var teaser_one=[];	
+			var link_one=[];
+			var result_one = [];						
+			var n=0;
+
+			$('article.story').each(function(i, element){															
+				
+				title_one[i]=$(this).text();											
+			});
+			//console.log(n);							
+
+			$('h3.media-unit__title').each(function(i,element){
+				teaser_one[i]=$(this).text();										
+			});
+			//console.log(teaser);
+			
+			$('div.media-unit__media').each(function(i,element){
+				link_one[i] =$(this).children().attr('src');				
+			});
+			//console.log(link);						
+			
+			for (i = 0; i < title_one.length; i++) { 
+			    result_one.push({a:link_one[i], b:title_one[i] , c: teaser_one[i] });			  
+			}
+
+			res.contentType('application/json');
+			res.send(JSON.stringify(result_one ));
+
+		}
+	});        
+});
+
+//******************* Not Completed*****************************//
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));

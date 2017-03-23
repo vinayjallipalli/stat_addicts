@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){       
    var scroll_start = 0;
    var startchange = $('.navbar-default');
@@ -13,7 +15,7 @@ $(document).ready(function(){
 });
 
 
-/*------------------------------------------------------------------------------------------*/
+/*----------------------------Angular code--------------------------------------------------------------*/
 
 
 var app=angular.module('mod_one',[]);
@@ -25,6 +27,10 @@ app.controller('ctrl_one',function ($scope,$http) {
 		$scope.details=response.data;
 	});
 
+	$http.get('scrape_one').then(function(response){
+		console.log(response.data);
+		//$scope.details=response.data;
+	});
 
 });
 
