@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nosifer");
 @import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url("https://fonts.googleapis.com/css?family=Acme");
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Roboto" );
 
 html, body {
   height: 100%;
@@ -15,38 +15,25 @@ html, body {
 .title{
     margin-top: 350px;
 	font-family: 'Nosifer', cursive;
-	font-size: 4.5em;
+	font-size: 6em;
     color: #F1F1F1;
     text-align: center;
 }
 
 .subtitle{
-	font-family: 'Merienda', cursive;
-	font-size: 1.2em;
+    font-family: 'Acme', sans-serif;
+	font-size: 1.58em;
 }
 
 .subtitle2{
-    font-family: 'Merienda', cursive;
+    font-family: 'Acme', sans-serif;
     text-align: center;
     font-size: 4em;;
 }
 
-.subtitle3{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: 150px;
-    font-size: 4em;
-}
-
-.subtitle4{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 4em;
-}
-
 
 .bg-primary {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.99) ),url("i1.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.99) ),url("i1.jpg");
 	background-repeat: no-repeat;  
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

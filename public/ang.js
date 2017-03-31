@@ -29,7 +29,7 @@ app.controller('ctrl_one',function ($scope,$http) {
 
 	$http.get('scrape_one').then(function(response){
 		console.log(response.data);
-		$scope.details=response.data;
+		//$scope.details=response.data;
 	});
 
 });
