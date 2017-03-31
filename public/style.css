@@ -23,6 +23,7 @@ html, body {
 .subtitle{
     font-family: 'Acme', sans-serif;
 	font-size: 1.58em;
+    letter-spacing: 0.07em;
 }
 
 .subtitle2{
