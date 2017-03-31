@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Roboto" );
 
 html, body {
   height: 100%;
@@ -14,33 +15,33 @@ html, body {
 .title{
     margin-top: 350px;
 	font-family: 'Nosifer', cursive;
-	font-size: 4.5vw;
+	font-size: 4.5em;
     color: #F1F1F1;
     text-align: center;
 }
 
 .subtitle{
 	font-family: 'Merienda', cursive;
-	font-size: 1.2vw;
+	font-size: 1.2em;
 }
 
 .subtitle2{
     font-family: 'Merienda', cursive;
     text-align: center;
-    font-size: 4vw;
+    font-size: 4em;;
 }
 
 .subtitle3{
-    font-family: 'Merienda', cursive;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 150px;
-    font-size: 2vw;
+    font-size: 4em;
 }
 
 .subtitle4{
-    font-family: 'Merienda', cursive;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 2vw;
+    font-size: 4em;
 }
 
 

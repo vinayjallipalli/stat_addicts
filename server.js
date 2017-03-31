@@ -48,8 +48,6 @@ app.get('/scrape', function(req, res){
 });
 
 
-
-//******************* Not Completed*****************************//
 app.get('/scrape_one', function(req, res){            
 	request('http://www.goal.com/en-india/', function (error, response, html) {
 		if (!error && response.statusCode == 200) 
@@ -61,22 +59,13 @@ app.get('/scrape_one', function(req, res){
 			var result_one = [];						
 			var n=0;
 
-			$('article.story').each(function(i, element){															
+			$('a.image-wrapper').each(function(i, element){															
 				
-				title_one[i]=$(this).text();											
+				title_one[i]=$(this).next().next().attr('data-title');
+				teaser_one[i]=$(this).next().next().attr('data-description');
+				link_one[i] =$(this).next().next().attr('data-image');				
 			});
-			//console.log(n);							
-
-			$('h3.media-unit__title').each(function(i,element){
-				teaser_one[i]=$(this).text();										
-			});
-			//console.log(teaser);
-			
-			$('div.media-unit__media').each(function(i,element){
-				link_one[i] =$(this).children().attr('src');				
-			});
-			//console.log(link);						
-			
+																			
 			for (i = 0; i < title_one.length; i++) { 
 			    result_one.push({a:link_one[i], b:title_one[i] , c: teaser_one[i] });			  
 			}
@@ -88,7 +77,6 @@ app.get('/scrape_one', function(req, res){
 	});        
 });
 
-//******************* Not Completed*****************************//
 
 
 app.listen(app.get('port'), function() {
